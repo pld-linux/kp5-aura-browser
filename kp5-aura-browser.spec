@@ -1,17 +1,17 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	5.26.5
+%define		kdeplasmaver	5.27.0
 %define		qtver		5.15.2
 %define		kpname		aura-browser
 Summary:	Browser for a fully immersed Big Screen experience
 Name:		kp5-%{kpname}
-Version:	5.26.5
+Version:	5.27.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	7cf5ed434a6d21fd8458f89207986b9a
+# Source0-md5:	850aba3f8d873908bb212355aadbe92c
 URL:		http://www.kde.org/
 BuildRequires:	cmake >= 2.8.12
 BuildRequires:	kf5-extra-cmake-modules
@@ -55,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{kpname}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/aura-browser
-%{_desktopdir}/org.aura.browser.desktop
 %{_iconsdir}/hicolor/128x128/apps/aura-browser.png
 %{_iconsdir}/hicolor/256x256/apps/aura-browser.png
 %{_datadir}/metainfo/org.kde.invent.aura_browser.metainfo.xml
+%{_desktopdir}/org.kde.aura-browser.desktop
