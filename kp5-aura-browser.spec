@@ -13,6 +13,7 @@ Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
 # Source0-md5:	98ad50d4bd635c28b33e498855ac5125
 URL:		http://www.kde.org/
+BuildRequires:	Qt5WebEngine-devel
 BuildRequires:	cmake >= 2.8.12
 BuildRequires:	kf5-extra-cmake-modules
 BuildRequires:	ninja
